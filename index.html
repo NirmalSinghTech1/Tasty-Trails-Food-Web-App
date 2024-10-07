@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Tasty Trails</h1>
+        <p>Follow the Flavor, Find the Feast!</p>
+    </header>
+
+    <main>
+        <section class="section-item">
+            <div id="container" class="container">
+                <!-- <div class="foodItems">
+                    <img src="images/hamburger.png" alt="Hamburger Photo" class="img">
+                    <div class="text">
+                        <h2>Pizza</h2>
+                        <p>pepperoni,mushroom,mozarella</p>
+                        <span class="currency">$14</span>
+                    </div>
+                    <input type="button" name="addToMenu" id="addBtn" value=" + ">
+                </div> -->
+            </div>
+
+            
+        </section>
+
+        <section id="payment-section">
+        <div id="item-payment">
+            <div id="container2">
+                <h3 class="order-heading">Your order</h3>
+                <div class="payment-container">
+                    <div class="cart-items">
+                        <div id="cart-items">
+                            <!-- Cart items -->
+                              
+                        </div>        
+        
+                        <!-- Divider -->
+                        <hr>
+                        
+                        <!-- Total Price -->
+                        <div class="total-price">
+                            <h4>Total Price:</h4>
+                            <span>$0</span>
+                        </div>
+                        <div class="submit-btn">
+                            <input type="button" name="button" id="submitBtn" class="submitBtn" value="Complete order">
+                        </div>
+                    </div>
+                </div>
+        </div>
+        </section>
+        
+    </main>
+
+    <div id="card-details" class="card-details">
+        <div id="close-btn" class="close">
+            <input type="button" name="close" id="close" value="X">
+        </div>
+        <h5>Enter card details</h5>
+        <form id="card" class="card">
+                <input type="text" name="name" id="name" placeholder="Enter your name" required>
+                <input type="number" name="number" id="number" placeholder="Enter your number" required>
+                <input type="number" name="cvv" id="cvv" placeholder="Enter your CVV" required>
+                <div class="submit-btn center">
+                    <input type="button" name="submit" id="submit" class="submitBtn" value="Pay">
+                </div>
+        </form>
+    </div>
+    <script src="script.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,363 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Smythe", system-ui;
+}
+
+/* header styling */
+header {
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(images/burger.jpg) no-repeat center center/cover;
+    background-color: black;
+    height: 200px;
+    color: #fff;
+    font-weight: 400;
+    font-style: normal;
+    padding: 2.04em 2.72em; /* 45px 60px */
+    font-size: 1.375rem; /*22px*/
+    letter-spacing: 0.18em;
+}
+
+header p{
+    line-height: 50px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body{
+    max-width: 50vw;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+/* Food Items Section */
+
+
+.section-item{
+    max-width: 100vw;
+    height: 111vh;
+}
+
+.container{
+    margin: 3.125em;
+}
+
+.foodItems{
+    display: flex;
+    align-items: center;
+    margin: 4.37em 0;
+}
+
+.foodItems .img{
+    width: 150px;
+    height: 150px;
+    margin-right: 2.5em;
+    object-fit: contain;
+}  
+
+.text{
+    margin-right: 1em;
+}
+
+.text h2 {
+    font-size: 35px;
+    letter-spacing: 2px;
+}
+
+.text p{
+    font-size: 24px;
+    color: #8B8B8B;
+}
+
+.currency{
+    font-size: 25px;
+    line-height: 60px;
+}
+
+#addBtn{
+    font-family: "Inter", sans-serif;
+    border-radius: 50%;
+    font-style: normal;
+    font-size: 32px;
+    font-weight: 200;
+    color: #3c3c3c;
+    margin-left: auto;
+    padding: 8px 8px 12px 8px;
+    background-color: transparent;
+}
+
+#addBtn:hover{
+    cursor: pointer;
+    background: #2a2a2a;
+    color: #fff;
+    transition: 0.6s;
+}
+
+/* order Section */
+
+.payment-container{
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    margin: 1.56em;
+    font-size: 2rem;
+}
+#payment-section{
+    height: 100vh;
+}
+
+.cart-items{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.cart-item-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* flex-direction: column; */
+}
+
+.item-details{
+    display: flex;
+    font-weight: 200;
+    flex-direction: row;   
+}
+
+.item-details input{
+    font-size: 18px;
+    margin: auto 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #bbbbbb;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+}
+
+.total-price{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.cart-item-row h4, .total-price h4 {
+    margin: 0;
+}
+
+.cart-items hr{
+    margin: 20px 0;
+    border: 2px solid black;
+}
+
+.order-heading{
+    text-align: center;
+    font-size: 32px;
+    font-weight: 200;
+}
+
+
+/* Complete order button */
+
+.submitBtn{
+    background: #16DB99;
+    color: #fff;
+    max-width: 60%;
+    min-width: 60%;
+    padding: 20px;
+    font-size: 23px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: block;
+    margin: 50px auto;
+    border: none;
+    cursor: pointer;
+}
+
+
+.submit-btn{
+    height: 100%;
+}
+
+/* card details section */
+
+.card-details{
+    display: none;
+    inset: 0;
+    position: fixed;
+    margin: auto;
+    height: 500px;
+    width: 700px;
+    background-color: #fff;
+    box-shadow: 0px 0px 41px -5px #3c3c3c;
+    border-radius: 10px;
+}
+
+.card-details h5{
+    text-align: center;
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 30px;
+}
+
+/* close button */
+.close{
+    text-align: right;
+}
+
+.close input{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.close input{
+    font-size: 20px;
+    padding: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+} 
+
+.card input{
+    margin: 20px 40px;
+    padding: 15px;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 10px;
+}
+
+.card input[type=number]::-webkit-inner-spin-button,
+.card input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.card .center input{
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+/* after payment message */
+
+.message-container{
+    height: 210px;
+    margin: 80px;
+}
+
+.message{
+     font-size: 30px;
+     text-align: center;
+     background: #ECFDF5;   
+     color: #065F46;
+     padding: 45px 55px;
+}
+
+
+/* CSS for mobile devices */
+
+@media (max-width:480px) {
+    body{
+        max-width: 100vw;
+        margin: 0 auto;
+        height: 100vh;
+    }
+    header{
+        width: 100vw;
+        padding: 2.1em 1.73em;
+    }
+    header h1{
+        letter-spacing: 0.1em;
+        font-size: 2rem;
+    }
+    header p{
+        letter-spacing: 0.1em;
+        font-size: 1rem;
+        line-height: 40px;
+    }
+
+    .cart-items hr{
+        border: 2px solid black;
+    }
+
+    .foodItems{
+        display: flex;
+        align-items: center;
+        margin: 2.37em 0;
+        justify-content: center;
+    }
+
+    .foodItems .img{
+        width: 105px;
+        height: 105px;
+        margin-right: 1.5em;
+        object-fit: contain;
+    } 
+
+    .text h2{
+        font-size: 2rem;
+    }
+    .text p{
+        font-size: 1rem;
+    }
+
+    #addBtn{
+        font-size: 1.56em;
+        font-weight: 200;
+        color: #3c3c3c;
+        margin-left: auto;
+        padding: 0px 1px 6px 1px;
+        background-color: transparent;
+    }
+
+    /* card details */
+
+    .card-details{
+        height: 60vh;
+        width: 90vw;
+        border-radius: 10px;
+        box-shadow: 0px 0px 30px -5px #3c3c3c;
+    }
+    
+    .card-details h5{
+        text-align: center;
+        font-size: 1.4rem;
+        margin-bottom: 0.8em;
+    }
+    .card input {
+        margin: 13px 30px;
+        padding: 15px;
+        font-size: 20px;
+        border-radius: 10px;
+    }
+    .card .center input{
+        margin: 1em auto;
+        width: 100%;
+        border-radius: 10px;
+    }
+    #payment-section{
+        height: 70vh;
+    }
+
+    .submitBtn{
+        max-width: 68%;
+        padding: 1.25em;
+        font-size: 1rem;
+        margin: 50px auto;
+        border-radius: 0.25em;
+    }
+    .section-item{
+        max-width: 100vw;
+        height: 80vh;
+    }
+}
